@@ -9,10 +9,17 @@
     <h1> 21600328's Survey </h1>
 
     <form action="/action_page.php">
-        <label for="StudentID"> Student ID: </label><br>
-        <input type="text" id="StudentID" name="StudentID" value=" "><br>
-        <label for="FullName">FullName:</label><br>
-        <input type="text" id="FullName" name="FullName" value=" "><br>
+        <fieldset>
+            <legend>인적사항:</legend>
+            <label for="StudentID"> Student ID: </label><br>
+            <input type="text" id="StudentID" name="StudentID" value=" "><br>
+            <label for="FullName">FullName:</label><br>
+            <input type="text" id="FullName" name="FullName" value=" "><br>
+            <label for="birthday">생년월일:</label>
+            <input type="date" id="birthday" name="birthday">
+        </fieldset>
+        
+
 
         <p> 실프1 수업의 난이도가 어떻다고 생각하시나요?  </p>
         <form id = "radio"> 
@@ -38,15 +45,25 @@
             <label for="3plus">I use Pad to study </label>
         </form>
         
-        <p>축제 참석 일수를 선택해주세요</p>
+        <p>10주차 축제 참석 일수를 선택해주세요</p>
         <form>
-            <label for="cars">축제 참석 일수:</label>
-            <select id="cars" name="cars">
-              <option value="0">1</option>
-              <option value="1">2</option>
-              <option value="2">3</option>
-              <option value="3">4</option>
+            <label for="festival">축제 참석 일수:</label>
+            <select id="festival" name="festival">
+                <optgroup label="참석 안함">
+                    <option value="0">0</option>
+                </optgroup>
+                <optgroup label="참석 함">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </optgroup>
             </select>
+          </form>
+
+        <p>건의사항이나 말하고싶은것이 있다면 자유롭게 작성해주세요</p>
+        <form>
+            <textarea name="message" rows="10" cols="30"> </textarea>
+            <br><br>
           </form>
           
         <input type="submit" value="Submit">
