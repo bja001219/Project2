@@ -6,13 +6,31 @@
     <title>Form</title>
 </head>
 <body>
-    <h1> 21600328's Form.html </h1>
+    <h1> 21600328's Survey </h1>
 
     <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="StudentID"> Student ID: </label><br>
+        <input type="text" id="StudentID" name="StudentID" value=" "><br>
+        <label for="FullName">FullName:</label><br>
+        <input type="text" id="FullName" name="FullName" value=" "><br>
+
+        <div> 
+            실프1 수업의 난이도가 어떻다고 생각하시나요?
+            <input type="radio" id="VHard" name="VHard" value="VHard">
+            <label for="vehicle1"> I find it very difficult</label><br>
+            <input type="radio" id="Hard" name="Hard" value="Hard">
+            <label for="vehicle1"> I find it difficult</label><br>
+            <input type="radio" id="Soso" name="Soso" value="Soso">
+            <label for="vehicle1"> I find it not bad</label><br>
+            <input type="radio" id="Easy" name="Easy" value="Easy">
+            <label for="vehicle1"> I find it Easy</label><br>
+            <input type="radio" id="VEasy" name="VEasy" value="VEasy">
+            <label for="vehicle1"> I find it Very Easy</label><br>
+        </div>
+        
+
+
+
         <input type="submit" value="Submit">
     </form>
 </body>
