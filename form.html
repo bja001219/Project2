@@ -14,9 +14,8 @@
         <label for="FullName">FullName:</label><br>
         <input type="text" id="FullName" name="FullName" value=" "><br>
 
+        <p> 실프1 수업의 난이도가 어떻다고 생각하시나요?  </p>
         <form id = "radio"> 
-            실프1 수업의 난이도가 어떻다고 생각하시나요?
-
             <input type="radio" id="VHard" name="difficulty" value="VHard">
             <label for="VHard"> I find it very difficult</label><br>
             <input type="radio" id="Hard" name="difficulty" value="Hard">
@@ -29,23 +28,27 @@
             <label for="VEasy"> I find it Very Easy</label><br>
         </form>
 
+        <p>공부하는데 사용하는 기기를 선택해주세요: </p>
         <form id = "checkbox">
-            공부하는데 사용하는 기기를 선택해주세요:
-
             <input type="checkbox" id="Phone" name="Device" value="Phone">
             <label for="One"> I use Phone to study </label><br>
             <input type="checkbox" id="Laptop" name="Device" value="Laptop">
             <label for="Two"> I use Laptop to study</label><br>
             <input type="checkbox" id="Pad" name="Device" value="Pad">
             <label for="3plus">I use Pad to study </label>
-
         </form>
-
-
         
-
-
-
+        <p>축제 참석 일수를 선택해주세요</p>
+        <form>
+            <label for="cars">축제 참석 일수:</label>
+            <select id="cars" name="cars">
+              <option value="0">1</option>
+              <option value="1">2</option>
+              <option value="2">3</option>
+              <option value="3">4</option>
+            </select>
+          </form>
+          
         <input type="submit" value="Submit">
     </form>
 </body>
