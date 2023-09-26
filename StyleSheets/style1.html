@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <link href="style1.css" rel="stylesheet">
-<link rel = "import" href="style2.html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0    ">
@@ -16,11 +15,11 @@
         <div class = "wrapper"> 
             <div id="menubar">
                 <ul id="menulist"> 
-                    <li class="menuitem" onclick="reStyle(0)">Stylesheet 1</li>
-                    <li class="menuitem" onclick="reStyle(0)">Stylesheet 2</li>
-                    <li class="menuitem" onclick="reStyle(0)">Stylesheet 3</li>
-                    <li class="menuitem" onclick="reStyle(0)">Stylesheet 4</li>
-                    <li class="menuitem" onclick="reStyle(0)">No StyleSheet</li>
+                    <li class="menuitem" href="style1">Stylesheet 1</li>
+                    <li class="menuitem" href="style2">Stylesheet 2</li>
+                    <li class="menuitem" href="#">Stylesheet 3</li>
+                    <li class="menuitem" href="#">Stylesheet 4</li>
+                    <li class="menuitem" href="nostyle">No StyleSheet</li>
                 </ul>    
             </div>
             <div id="main"> 
@@ -29,14 +28,14 @@
                     <br> 
                         <a href="style1">Stylesheet1</a>, 
                         <a href="style2">Stylesheet2</a>,
-                        <a> Stylesheet3</a>, 
-                        <a> Stylesheet4</a>.
+                        <a href="#"> Stylesheet3</a>, 
+                        <a href="#"> Stylesheet4</a>.
                     </br>
                 </p>
                 <h2> No Styles </h2>
                 <p> This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet: 
                     <br> 
-                        <a href="#" onclick="reStyle(0);return false">No StyleSheet</a>.
+                        <a href="nostyle">No StyleSheet</a>.
                     </br>
                 </p>
             </div>
